@@ -7,11 +7,11 @@ function register() {
         var errorCode = error.code;
         var errorMessage = error.message;
         alert(errorMessage);
+        window.location.reload(true);
     }).then(function(user){
         alert("Successfully Registered ,UID:"+user.uid);
+        window.location.reload(true);
     });
-    alert("Registered Successfully");
-    window.location.reload(true);
 }
 
 function log()
@@ -20,9 +20,10 @@ function log()
     email = document.getElementById("user").value;
     password = document.getElementById("pwd").value;
     firebase.auth().signInWithEmailAndPassword(email,password).then(function(user){
-    alert('Login Successful');
+        alert('Login Successful');
+        window.location.reload(true);
     }).catch(function(error){
-            alert(error.code+'   Login Failed');
-        });
-    window.location.reload(true);
+        alert(error.code+'   Login Failed');
+        window.location.reload(true);
+    });
 }
