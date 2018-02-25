@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>My First VueJS Application</title>
-    <script type="text/javascript" src="vue.js"></script>
+    <title>Firebase!!!</title>
+
     <script src="firebase.js"></script>
 </head>
 <body>
@@ -10,8 +10,9 @@
 <div id="abc" >
     <input type="text" id="user" class="user"/>
     <input type="password" id="pwd" class=pwd"/>
-    <button type="button"  id="log" class="log" onclick="log()">Login</button>
+    <button type="submit"  id="log" class="log" onclick="log()">Login</button>
     <button type="button"  id="reg" class="reg" onclick="register()">Reg</button>
+    <button type="button" id="google" class="google" onclick="ggl()">Google Login</button>
     <script type="text/javascript" src="abc.js"></script>
     <script type="text/javascript">
         var config = {
@@ -23,6 +24,7 @@
         messagingSenderId: "797254445935"
     };
     firebase.initializeApp(config);
+
     </script>
 </div>
 </body>
