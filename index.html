@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>My First VueJS Application</title>
+    <script type="text/javascript" src="vue.js"></script>
+    <script src="firebase.js"></script>
+</head>
+<body>
+
+<div id="abc" >
+    <input type="text" id="user" class="user"/>
+    <input type="password" id="pwd" class=pwd"/>
+    <button type="button"  id="log" class="log" onclick="log()">Login</button>
+    <button type="button"  id="reg" class="reg" onclick="register()">Reg</button>
+    <script type="text/javascript" src="abc.js"></script>
+    <script type="text/javascript">
+        var config = {
+        apiKey: "AIzaSyAtl4-zK3d6l7Vam-XWR6jKL7X8-2WkYZE",
+        authDomain: "trial-29c8a.firebaseapp.com",
+        databaseURL: "https://trial-29c8a.firebaseio.com",
+        projectId: "trial-29c8a",
+        storageBucket: "trial-29c8a.appspot.com",
+        messagingSenderId: "797254445935"
+    };
+    firebase.initializeApp(config);
+    alert('Initialized Firebase');
+    </script>
+</div>
+</body>
+</html>
