@@ -9,7 +9,6 @@ function register() {
         alert(errorMessage);
         window.location.reload(true);
     }).then(function(user){
-        alert("Successfully Registered ,UID:"+user.uid);
         window.location.reload(true);
     });
 }
