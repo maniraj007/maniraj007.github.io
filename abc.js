@@ -11,7 +11,7 @@ function register() {
         alert("Successfully Registered ,UID:"+user.uid);
     });
     alert("Registered Successfully");
-    location.reload();
+    location.reload(true);
 }
 
 function log()
@@ -24,5 +24,5 @@ function log()
     }).catch(function(error){
             alert(error.code+'   Login Failed');
         });
-    location.reload();
+    location.reload(true);
 }
