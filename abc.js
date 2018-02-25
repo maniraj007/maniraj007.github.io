@@ -26,3 +26,12 @@ function log()
         window.location.reload(true);
     });
 }
+function ggl()
+{
+    var provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider).then(function(usr){
+        alert('Login Successful '+usr.user);
+    }).catch(function(error){
+        alert(error.code+'   Login Failed');
+    });
+}
